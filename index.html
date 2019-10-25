@@ -1,7 +1,6 @@
 <html>
     <header>
         <title>Dog Comparison </title>
-         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
          <link rel="stylesheet" href="styles.css" />
     </header>
     <body>
@@ -9,15 +8,18 @@
    <div id="app">
        
        <h1>Dog Pictures</h1>
+       <h3>Man's Best Friend</h3>
        <button v-on:click="jokes">New Dog</button> 
        <button v-on:click="favorite">Update Favorite</button>
        <hr>
        <div v-if="loading">
        <p>Loading...</p>
        </div>
-       <div v-else class = row>
-       <div class = column><h3>Current Dog</h3><img :src="url" alt="cute dog"></div>
-       <div class = column><h3>Favorite Dog</h3><img :src="fav" alt="best dog"></div>
+       <div v-else>
+       <div class = "row">
+       <div class = "column"><h3>Current Dog</h3><img :src="url" alt="cute dog"></div>
+       <div class = "column"><h3>Favorite Dog</h3><img :src="fav" alt="best dog"></div>
+       </div>
        </div>
        
    </div>   
