@@ -1,0 +1,36 @@
+<html>
+    <header>
+        <title>Dog Comparison </title>
+         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+         <link rel="stylesheet" href="styles.css" />
+    </header>
+    <body>
+  
+   <div id="app">
+       
+       <h1>Dog Pictures</h1>
+       <button v-on:click="jokes">New Dog</button> 
+       <button v-on:click="favorite">Update Favorite</button>
+       <hr>
+       <div v-if="loading">
+       <p>Loading...</p>
+       </div>
+       <div v-else class = row>
+       <div class = column><h3>Current Dog</h3><img :src="url" alt="cute dog"></div>
+       <div class = column><h3>Favorite Dog</h3><img :src="fav" alt="best dog"></div>
+       </div>
+       
+   </div>   
+  
+  <div class="footer">
+  <a href="https://github.com/hatchk12/Lab3.git">GitHub Link</a>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
+  <script src="script.js"></script>
+  
+  </body>
+</html>

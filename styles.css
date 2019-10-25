@@ -1,0 +1,40 @@
+html{
+    font-family:Sans-Serif;
+}
+.footer a{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    color:black !important;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightBlue;
+}
+
+h1{
+    background-color:lightblue;
+}
+body{
+    text-align:center;
+}
+
+img{
+    width:80%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button{
+    font-size:18px;
+}
